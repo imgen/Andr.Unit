@@ -16,26 +16,27 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AssemblyName>Andr.Unit</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <ConsolePause>False</ConsolePause>
     <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>False</ConsolePause>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
@@ -58,57 +59,6 @@
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_achievements.xml">
-      <Link>Resources\layout\dialog_achievements.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_boolfieldleft.xml">
-      <Link>Resources\layout\dialog_boolfieldleft.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_boolfieldright.xml">
-      <Link>Resources\layout\dialog_boolfieldright.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_boolfieldsubleft.xml">
-      <Link>Resources\layout\dialog_boolfieldsubleft.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_boolfieldsubright.xml">
-      <Link>Resources\layout\dialog_boolfieldsubright.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_button.xml">
-      <Link>Resources\layout\dialog_button.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_datefield.xml">
-      <Link>Resources\layout\dialog_datefield.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_fieldsetlabel.xml">
-      <Link>Resources\layout\dialog_fieldsetlabel.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_labelfieldbelow.xml">
-      <Link>Resources\layout\dialog_labelfieldbelow.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_labelfieldright.xml">
-      <Link>Resources\layout\dialog_labelfieldright.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_onofffieldright.xml">
-      <Link>Resources\layout\dialog_onofffieldright.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_panel.xml">
-      <Link>Resources\layout\dialog_panel.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_selectlist.xml">
-      <Link>Resources\layout\dialog_selectlist.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_selectlistfield.xml">
-      <Link>Resources\layout\dialog_selectlistfield.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_textarea.xml">
-      <Link>Resources\layout\dialog_textarea.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_textfieldbelow.xml">
-      <Link>Resources\layout\dialog_textfieldbelow.xml</Link>
-    </AndroidResource>
-    <AndroidResource Include="..\..\MonoDroid.Dialog\DialogSampleApp\Resources\layout\dialog_textfieldright.xml">
-      <Link>Resources\layout\dialog_textfieldright.xml</Link>
-    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -119,6 +69,10 @@
     <ProjectReference Include="..\m4a.tests\m4a.tests.csproj">
       <Project>{06D00E82-E637-4A8A-95BE-3E1ADE925B9B}</Project>
       <Name>m4a.tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoDroid.Dialog\MonoDroid.Dialog.csproj">
+      <Project>{E9616034-1C4B-4189-A4FB-8EDDCB53188D}</Project>
+      <Name>MonoDroid.Dialog</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

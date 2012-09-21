@@ -16,10 +16,11 @@
 
 using System.Reflection;
 
-using Android.App;
-using Android.OS;
+using Android;
 using Android.NUnitLite;
 using Android.NUnitLite.UI;
+using Android.App;
+using Android.OS;
 
 namespace Andr.Unit {
 	
