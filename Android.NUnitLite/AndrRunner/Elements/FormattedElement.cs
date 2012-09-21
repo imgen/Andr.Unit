@@ -26,8 +26,8 @@ namespace Android.NUnitLite.UI {
 	
 	class FormattedElement : StringElement {
 		
-        private new TextView _caption;
-        private new TextView _text;
+        private TextView _caption;
+        private TextView _text;
 		
 		public FormattedElement (string caption) : base (caption)
 		{

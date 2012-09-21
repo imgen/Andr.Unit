@@ -33,17 +33,22 @@ namespace Android.NUnitLite.UI {
 		BooleanElement remote;
 		EntryElement host_name;
 		EntryElement host_port;
+
+        public OptionsActivity()
+            :base()
+        {
+        }
 		
 		protected override void OnCreate (Bundle bundle)
 		{
 			Options options = AndroidRunner.Runner.Options;
 			remote = new BooleanElement ("Remote Server", options.EnableNetwork);
-			host_name = new EntryElement ("HostName", options.HostName);
-			host_port = new EntryElement ("Port", options.HostPort.ToString ()) { Numeric = true };
+			host_name = new EntryElement ("HostName", string.Empty, options.HostName);
+            host_port = new EntryElement ("Port", string.Empty, options.HostPort.ToString ());
 			
-			Root = new RootElement ("Options") {
-				new Section () { remote, host_name, host_port }
-			};
+            Root = new RootElement("Options"){
+                new Section{remote, host_name, host_port}
+            };
 			
 			base.OnCreate (bundle);
 		}
